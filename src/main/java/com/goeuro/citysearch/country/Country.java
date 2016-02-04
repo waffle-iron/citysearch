@@ -1,8 +1,5 @@
-package com.goeuro.cityquery;
+package com.goeuro.citysearch.country;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Country {
 	
 	private Long id;

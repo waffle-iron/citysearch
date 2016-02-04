@@ -1,8 +1,8 @@
-package com.goeuro.cityquery;
+package com.goeuro.citysearch.city;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.goeuro.citysearch.country.Country;
+import com.goeuro.citysearch.geoposition.GeoPosition;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class City {
 
 	private Long id;
@@ -11,6 +11,7 @@ public class City {
 	private String fullName;
 	private String airportCode;
 	private String citytype;
+
 	private Country country;
 	private GeoPosition geoPosition;
 
@@ -76,13 +77,6 @@ public class City {
 
 	public void setGeoPosition(GeoPosition geoPosition) {
 		this.geoPosition = geoPosition;
-	}
-
-	@Override
-	public String toString() {
-		return "City [id=" + id + ", citykey=" + citykey + ", name=" + name + ", fullName=" + fullName
-				+ ", airportCode=" + airportCode + ", citytype=" + citytype + ", country=" + country + ", geoPosition="
-				+ geoPosition + "]";
 	}
 
 }
